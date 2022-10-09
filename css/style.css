@@ -26,7 +26,7 @@
         width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
-        outline: 2px solid red;
+        /* outline: 2px solid red; */
         margin: 0 auto;
         
       }
@@ -69,9 +69,12 @@
         }
         .header-contact {
             margin-left: auto;
+            display: flex;
+            gap: 30px;
 
-           
-           
+        }
+        .header-contact:hover{
+            color: #2196F3;
         }
     .header-logo {
     font-family: 'Raleway',sans-serif; 
@@ -107,22 +110,36 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color);
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     }
+    
+    
+    
+
     .header-mail {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--main-color);
+        display: flex;
+        align-items: center;
+        gap: 10px;
         
     }
-    .header-mail:hover,
-    .header-tel:hover,
-    .header-mail:focus,
-    .header-tel:focus{
+    .header-tel:hover ,
+    .header-mail:hover{
         color: dodgerblue;
     }
+    
+    
+    .header-soc-icon {
+        
+        fill: currentColor;
+    }
+  
     /*------------ Header---------------- */
     /*------------ Section-1---------------- */
     .hero {
@@ -130,7 +147,14 @@
         padding: 200px 0;
         margin: 0 auto;
         text-align: center;
-        
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ) ,
+        url(../images/Img\ \(fon\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        block-size: cover;
     }
     .hero-text {
         font-weight: 900;
@@ -178,13 +202,24 @@
     text-transform: uppercase;
     color: var(--top-color);
     margin-bottom: 10px;
+    margin-top: 10px;
+    }
+    .peculiarities-soc-link {
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .peculiarities-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    }
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+        }
+   
     /*------------ Section-2---------------- */
     /*------------ Section-3---------------- */
    .work {
@@ -220,10 +255,46 @@
     .about-iten {
         padding-bottom: 30px;
         background-color: #fff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+         0px 1px 1px rgba(0, 0, 0, 0.14), 
+         0px 2px 1px rgba(0, 0, 0, 0.2);
     }
     .container-about {
         
     }
+    .about-soc-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;}
+
+
+        .about-soc-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color:transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+            .about-soc-icon {
+                fill: #AFB1B8;
+            }
+            .about-soc-list {
+                display: flex;
+                justify-content: center;
+                gap: 10px;}
+
+            .about-soc-link:hover,
+            .about-soc-link:focus {
+              background-color: #2196F3;
+}
+            .about-soc-link:hover .about-soc-icon,
+            .about-soc-link:focus .about-soc-icon {
+              fill: #FFFFFF;
+} 
+
     .about-title {
         font-weight: 700;
         font-size: 36px;
@@ -252,8 +323,63 @@
         color: var(--main-color);
         align-items: center;
         display: block;
+        margin-bottom: 16px;
     }
     /*------------ Section-4---------------- */
+    /*------------ Section-5---------------- */
+    .client {
+    }
+    .container {
+    }
+    .container-client {
+       padding-top: 94px;
+       padding-bottom: 94px;
+    }
+    .client-tetle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--top-color);
+        margin-bottom: 50px;
+    }
+    .client-list {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .client-iten {        
+        background-color: #FFFFFF;
+
+    }
+    .client-soc-link {
+            width: 170px;
+            height: 92px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            background-color:#fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+    .client-soc-icon {
+        fill: #AFB1B8;
+    }
+    .client-soc-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;}
+
+    .client-soc-link:hover,
+    .client-soc-link:focus {
+      background-color: #fff;
+}
+    .client-soc-link:hover .client-soc-icon,
+    .client-soc-link:focus .client-soc-icon {
+      fill: #2196F3;
+} 
+    /*------------ Section-5---------------- */
     /*------------ Footer---------------- */
     .footer {
         padding-top: 60px;
@@ -311,6 +437,59 @@
     .footer-mail:hover,
     .footer-tel:hover{
         color: dodgerblue;
+    }
+    /* .container-footer {
+        display: flex;
+        margin: 0;
+        gap: 70px; */
+    .footer-contact-container {
+        display: flex;
+        gap: 70px;
+        align-items: baseline;
+    }
+    .soc-list{
+        display: flex;
+        justify-content: center;
+        gap: 10px;}
+    .footer-soc {
+        
+    }
+        .soc-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 0.87;
+            letter-spacing: 0.03em;
+             text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+
+        .footer-soc-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+            .footer-soc-icon {
+                fill: #fff;
+            }
+            .footer-soc-list {
+                display: flex;
+                justify-content: center;
+                gap: 10px;}
+
+            .footer-soc-link:hover,
+            .footer-soc-link:focus {
+              background-color: #2196F3;
+}
+            .footer-soc-link:hover .footer-soc-icon,
+            .footer-soc-link:focus .footer-soc-icon {
+              fill: #fff;
     }
     /*------------ Footer---------------- */
     /*------------ Портфоліо---------------- */
@@ -372,6 +551,12 @@ padding: 6px 22px;
         width: calc((100% - 60px) / 3);
         border: 1px solid #EEEEEE;
     }
+    .project-shadow {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
+    
     .project-description {
         padding-left: 24px;
         padding-right: 24px;

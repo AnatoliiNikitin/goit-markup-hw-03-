@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+yy6y<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +32,7 @@
               <a class="header-link link current" href="./index.html">Студія</a>
             </li>
             <li class="header-iten">
-              <a class="header-link link" href="">Портфоліо</a>
+              <a class="header-link link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="header-iten">
               <a class="header-link link" href="">Контакти</a>
@@ -40,11 +40,28 @@
           </ul>
         </nav>
         <div class="header-contact">
-          <a class="header-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+          <div class="header-soc">
+          
+           
+            <a class="header-mail" href="mailto:info@devstudio.com"
+              >
+              <svg class="header-soc-icon" width="16" height="12">
+                <use href="./images/symbol-defs-con.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+              </a
             >
-            <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </div> 
+          </div>
+          <div class="header-soc">
+         
+            <a class="header-tel" href="tel:+380961111111">
+              <svg class="header-soc-icon" width="10" height="16">
+                <use href="./images/symbol-defs-con.svg#icon-Vector"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -73,7 +90,7 @@
           </div>
           <h2 hidden>Проети</h2>
           <ul class="project-list">
-            <li class="project-iten">
+            <li class="project-iten project-shadow">
               <img src="./images/project-1.jpg" alt="" />
               <div class="project-description">
                 <h2 class="project-title">Технокряк</h2>
@@ -134,7 +151,7 @@
               <div class="project-description">
                 <h2 class="project-title">Growing Business</h2>
                 <span class="project-text">Додаток</span>
-              </div>>
+              </div>
             </li>
           </ul>
         </section>
@@ -142,31 +159,70 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        <h2 class="footer-title" hidden>Контакти</h2>
-        <a class="footer-logo" href=""
-          >Web<span class="footer-logo-color">Studio</span></a
-        >
-        <address class="address">
-          <a
-            class="address-link"
-            href="https://goo.gl/maps/uvSMvUKNsepTXGcc9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            м. Київ, пр-т Лесі Українки, 26</a
-          >
-          <ul class="footer-list">
-            <li class="footer-iten">
-              <a class="footer-mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+        <div class="footer-contact-container">
+          <div class="footer-contact">
+            <h2 class="footer-title" hidden>Контакти</h2>
+            <a class="footer-logo" href=""
+              >Web<span class="footer-logo-color">Studio</span></a
+            >
+            <address class="address">
+              <a
+                class="address-link"
+                href="https://goo.gl/maps/uvSMvUKNsepTXGcc9"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-            </li>
-            <li class="footer-iten">
-              <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div >
+                м. Київ, пр-т Лесі Українки, 26</a
+              >
+              <ul class="footer-list">
+                <li class="footer-iten">
+                  <a class="footer-mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-iten">
+                  <a class="footer-tel" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-soc">
+            <h2 class="soc-title">ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="soc-list">
+              <li class="soc-iten">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-iten">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-iten">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-iten">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
