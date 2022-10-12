@@ -50,8 +50,7 @@
         text-decoration: none;}
         /*------------ Header---------------- */
         .header {
-            padding-top: 24px;
-            padding-bottom: 25px;
+            
             border-bottom: 1px solid #ECECEC;
         }
         .header-navigation {
@@ -84,6 +83,9 @@
     letter-spacing: 0.03em;
     color: #2196F3;
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: block;
     }
     .logo-color {
         color:  #000000;
@@ -93,8 +95,10 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+    padding-top: 24px;
+ padding-bottom: 25px;
     color: var(--top-color);
+    display: block;
     }
     .header-link:hover,
     .header-link:focus {
@@ -113,6 +117,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 24px;
+  padding-bottom: 25px;
+            
     }
     
     
@@ -127,9 +134,13 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        
+        padding-top: 24px;
+            padding-bottom: 25px;
+            display: block;
     }
     .header-tel:hover ,
+    .header-tel:focus,
+    .header-mail:focus,
     .header-mail:hover{
         color: dodgerblue;
     }
@@ -143,7 +154,7 @@
     /*------------ Header---------------- */
     /*------------ Section-1---------------- */
     .hero {
-        background-color: #2F303A;
+        background: #C4C4C4;
         padding: 200px 0;
         margin: 0 auto;
         text-align: center;
@@ -154,7 +165,8 @@
         url(../images/Img\ \(fon\).jpg);
         background-repeat: no-repeat;
         background-position: center;
-        block-size: cover;
+        background-size: cover;
+        
     }
     .hero-text {
         font-weight: 900;
@@ -166,6 +178,7 @@
         margin-bottom: 30px;
         margin: 0 auto;
         max-width: 696px;
+        margin-bottom: 30px;
     }
     .hero-botton {
     font-family: inherit;
@@ -202,7 +215,7 @@
     text-transform: uppercase;
     color: var(--top-color);
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
     }
     .peculiarities-soc-link {
         width: 270px;
@@ -374,10 +387,13 @@
     .client-soc-link:hover,
     .client-soc-link:focus {
       background-color: #fff;
+      border-color: #2196F3;
 }
     .client-soc-link:hover .client-soc-icon,
     .client-soc-link:focus .client-soc-icon {
       fill: #2196F3;
+      
+      
 } 
     /*------------ Section-5---------------- */
     /*------------ Footer---------------- */
@@ -435,6 +451,8 @@
     color: rgba(255, 255, 255, 0.6);
     }
     .footer-mail:hover,
+    .footer-mail:focus,
+    .footer-tel:focus,
     .footer-tel:hover{
         color: dodgerblue;
     }
@@ -505,16 +523,13 @@
     .portfolio-list {
         display: flex;
         gap: 8px;
+      justify-content: center;
       
-        
+      
     }
-    .porfolio-lists {
-       margin: 0 auto;
-       max-width: 590px;
-   margin-bottom: 50px;
-
-    }
+    
     .portfolio-iten {
+        margin-bottom: 50px;
     }
 
     .portfolio-button {
@@ -546,16 +561,18 @@ padding: 6px 22px;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        
     }
     .project-iten {
         width: calc((100% - 60px) / 3);
         border: 1px solid #EEEEEE;
     }
-    .project-shadow {
+    .project-iten:hover,
+    .project-iten:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-   }
+    }
     
     .project-description {
         padding-left: 24px;
